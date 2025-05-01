@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'MockExamPrep.urls'
+ROOT_URLCONF = 'mockexamprep.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MockExamPrep.wsgi.application'
+WSGI_APPLICATION = 'mockexamprep.wsgi.application'
 
 
 # Database
