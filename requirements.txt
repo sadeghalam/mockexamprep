@@ -81,9 +81,6 @@ Pygments==2.17.2
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
-pytz==2024.1
-pywin32==306
-pywinpty==2.0.13
 PyYAML==6.0.1
 pyzmq==25.1.2
 qrcode==8.0
@@ -114,3 +111,7 @@ wcwidth==0.2.13
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0
+Django>=4.2
+gunicorn>=20.1.0
+whitenoise>=6.7.0
+stripe>=10.6.0
