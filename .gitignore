@@ -1,0 +1,19 @@
+# PyCharm project files
+.idea/
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Database (if you don’t want to track it)
+db.sqlite3
+
+# Static files (already collected in staticfiles/)
+static/
+
+# macOS system files (if applicable)
+.DS_Store

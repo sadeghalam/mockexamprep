@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section text-center py-5" style="background-image: url('{% static 'main/hero.jpg' %}');">
+    <h1 class="display-4 fw-bold">Ace Your ABR Exams</h1>
+    <p class="lead">Crafted by ABR board-certified imaging physicists with real-world experience from top institutions.
+<br>We’ve done the QC, taught the residents, led the research, and lived the
+    exam — now we’re here to help you master it.</p>
+</div>
+
+<!-- Intro Section -->
+<div class="container py-5 intro-section">
+    <h2 class="text-center mb-4">Why Choose Us?</h2>
+    <p class="text-center">Real exam experience. Real-world imaging physicists.</p>
+    <p class="text-center"><b><i>Your shortcut to ABR success.</i></b></p>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+    <img src="{% static 'main/what-we-offer.jpg' %}" alt="What We Offer" class="img-fluid mb-3 intro-icon">
+    <h4>What We Offer</h4>
+    <p>Learn more about our packages, pricing, and discounts.</p>
+    <a href="/services" class="btn btn-explore-services">Explore Services</a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiners.jpg' %}" alt="Examiners" class="img-fluid mb-3 intro-icon">
+            <h4>Examiners</h4>
+            <p>Our experienced examiners are ready to help you ace the ABR exam.</p>
+            <a href="/examiners" class="btn btn-outline-primary">Meet Our Team</a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/book-a-mock-exam.jpg' %}" alt="Book a Mock Exam" class="img-fluid mb-3 intro-icon">
+            <h4>Book a Mock Exam</h4>
+            <p>Sign up for Computerized ABR Part 2 or Oral Part 3 Mock Exams.</p>
+            <a href="/book" class="btn btn-outline-primary">Sign Up</a>
+        </div>
+    </div>
+<!-- Booking Buttons -->
+<div class="text-center mt-5 booking-buttons">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-3">
+            <a href="/practice" class="btn btn-primary btn-lg w-100">Practice Question Banks</a>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <a href="/services#free-sample-questions" class="btn btn-primary btn-lg w-100">Free Sample Questions</a>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

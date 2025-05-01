@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5 confirmation-section">
+    <h1 class="text-center mb-5">Your Spot is Booked!</h1>
+    <p class="text-center lead mb-5">
+        Thank you, {{ invitee_name }}, for scheduling your {{ event_type_name }} with MockExamPrep. You’ll receive a confirmation email shortly with the details of your booking.
+    </p>
+    <div class="text-center">
+        <a href="/services" class="btn btn-primary btn-lg mx-2">Explore More Services</a>
+        <a href="/book" class="btn btn-primary btn-lg mx-2">Book Another Exam</a>
+    </div>
+</div>
+{% endblock %}

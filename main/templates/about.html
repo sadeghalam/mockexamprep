@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5 about-section">
+    <h1 class="text-center mb-5"><b>Built by physicists. For physicists.</b></h1>
+    <p class="text-center lead mb-5">We are a team of ABR Board-Certified Imaging Medical Physicists with decades of combined clinical experience and a passion for mentoring the next generation of medical physicists.</p>
+
+    <!-- Mission -->
+    <h2 class="text-center mb-4">Our Mission</h2><br>
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="info-card p-4 text-center">
+                <p>Having been through the ABR exams ourselves — and now as seasoned professionals — we know what it takes to succeed.
+<br>Our mission is simple: to provide a realistic, high-yield, and supportive exam preparation experience for imaging physicists preparing for ABR Part II and Part III exams.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Our Team -->
+    <h2 class="text-center mb-4">Our Team</h2>
+    <p class="text-center mb-5">Meet the experts behind MockExamPrep.</p>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner1.jpg' %}" alt="Oscar San" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Oscar San, MS, DABR</h4>
+            <p>Extensive consulting experience.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner2.jpg' %}" alt="Sam Alam" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Sam Alam, PhD, DABR</h4>
+            <p>Extensive research experience.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner3.jpg' %}" alt="Tiffany Lin" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Tiffany Lin, MS, DABR</h4>
+            <p>Extensive resident training experience.</p>
+        </div>
+    </div>
+
+<!-- Contact Us Form -->
+<h2 class="text-center mb-4">Contact Us</h2>
+<div class="row justify-content-center mb-5">
+    <div class="col-md-6">
+        <div class="contact-form p-4">
+            <form method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Jane" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Smitherton" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@janesfakedomain.net" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your question or message" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+ <!-- Call to Action
+    <div class="text-center mt-5">
+        <h3>Ready to Ace Your ABR Exams?</h3>
+        <p class="mb-4">Explore our services and start your preparation today.</p>
+        <a href="/services" class="btn btn-primary btn-lg">Get Started</a>
+    </div>-->
+</div>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn mockexamprep.wsgi:application --log-file -

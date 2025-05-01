@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5 booking-section">
+    <h1 class="text-center mb-5">Book Your Mock Exam</h1>
+    <p class="text-center lead mb-5">Schedule your ABR mock exam with our expert examiners.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="booking-options p-4">
+                <h2 class="text-center mb-4">Select Your Exam</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <a href="https://calendly.com/sam-alam-qmp/part-3-full-session" class="btn btn-primary btn-lg w-100">Part 3 Full Session ($700)</a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://calendly.com/sam-alam-qmp/part-3-focused-session" class="btn btn-primary btn-lg w-100">Part 3 Focused Session ($350)</a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://calendly.com/sam-alam-qmp/part-3-targeted-session" class="btn btn-primary btn-lg w-100">Part 3 Targeted Session ($250)</a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://calendly.com/sam-alam-qmp/part-2-full-exam" class="btn btn-primary btn-lg w-100">Part 2 Full Exam ($350)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

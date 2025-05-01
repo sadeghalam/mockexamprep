@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5 examiners-section">
+    <h1 class="text-center mb-5">Examiners</h1>
+    <p class="text-center lead mb-5">Our team of experienced ABR Board-Certified Imaging Medical Physicists is dedicated to helping you succeed in your ABR Part 3 Oral Exam.</p>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner1.jpg' %}" alt="Oscar San" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Oscar San, MS, DABR</h4>
+            <p>Extensive consulting experience.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner2.jpg' %}" alt="Sam Alam" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Sam Alam, PhD, DABR</h4>
+            <p>Extensive research experience.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'main/examiner3.jpg' %}" alt="Tiffany Lin" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Tiffany Lin, MS, DABR</h4>
+            <p>Extensive resident training experience.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

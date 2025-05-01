@@ -1,0 +1,689 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-section > * {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-section p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.intro-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro-section p.text-center {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.intro-section .col-md-4 {
+    padding: 20px;
+}
+
+.intro-section .intro-icon {
+    width: 230px; /* Adjust based on your images */
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.intro-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    color: #333333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.intro-section .btn-outline-primary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.intro-section .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.intro-section .btn-explore-services {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.intro-section .btn-explore-services:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Booking Buttons */
+.booking-buttons {
+    margin-top: 40px;
+    margin-bottom: 40px; /* Add spacing at the bottom */
+}
+
+.booking-buttons .btn-primary {
+    background-color: #333;
+    border-color: #333;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.booking-buttons .btn-primary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.booking-buttons .col-md-4 {
+    display: flex;
+    justify-content: center; /* Center buttons within their columns */
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 123, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+
+.practice-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.practice-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.practice-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.practice-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.practice-section .package-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.practice-section .package-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.practice-section .package-card p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.practice-section .package-card .price {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.practice-section .package-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.practice-section .package-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.practice-section .topic-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.practice-section .topic-card:hover {
+    transform: translateY(-5px);
+}
+
+.practice-section .topic-card h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.practice-section .topic-card .btn-outline-primary {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-width: 2px;
+}
+
+.practice-section .topic-card .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+
+.examiners-section {
+    padding: 60px 0;
+}
+
+.examiners-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.examiners-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.examiners-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.examiners-section p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.examiners-section .img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.examiners-section .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .intro-section .intro-icon {
+        width: 100px; /* Slightly smaller on mobile */
+        height: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 250px; /* Smaller on mobile */
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+}
+
+.services-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.services-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.services-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.services-section .service-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-section .service-card:hover {
+    transform: translateY(-5px);
+}
+
+.services-section .service-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.services-section .service-card p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.services-section .service-card .price {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.services-section .service-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.services-section .service-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.learn-more-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.learn-more-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.learn-more-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.learn-more-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.learn-more-section .info-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.learn-more-section .info-card:hover {
+    transform: translateY(-5px);
+}
+
+.learn-more-section .info-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.learn-more-section .info-card p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.learn-more-section .info-card .btn-outline-primary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-width: 2px;
+}
+
+.learn-more-section .info-card .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.learn-more-section .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.learn-more-section .accordion-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.learn-more-section .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.learn-more-section .accordion-body {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.learn-more-section .accordion-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.learn-more-section .accordion-body a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for anchor links to account for fixed navbar */
+h2[id] {
+    padding-top: 80px; /* Adjust based on your navbar height */
+    margin-top: -80px; /* Negative margin to pull content up */
+}
+
+.signup-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.signup-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.signup-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.signup-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form .form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.signup-form .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.signup-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+.signup-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.signup-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.about-section .lead {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.about-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-section .info-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .info-card p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.about-section .col-md-4 h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section .col-md-4 p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.about-section .img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.about-section .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+.about-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+.about-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.about-section .contact-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .contact-form .form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.about-section .contact-form .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.about-section .contact-form .form-control::placeholder {
+    color: #aaa;
+}
+
+.about-section .contact-form textarea.form-control {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+.about-section .contact-form .btn-primary {
+    background-color: #333;
+    border-color: #333;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+.about-section .contact-form .btn-primary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.success-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.success-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.success-section .lead {
+    font-size: 1.1rem;
+    color: #000000; /* Updated to black */
+}
+
+.success-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+.success-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
